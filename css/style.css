@@ -38,8 +38,9 @@ a{
     text-decoration: none;
 }
 
-h1,h2,h3,h4{
+h1, h2, h3, h4{
     font-family: var(--fuenteHeading);
+    line-height: 1.2;
 }
 
 h1{
@@ -49,10 +50,10 @@ h2{
     font-size: 4rem;
 }
 h3{
-    font-family: 3.2rem;
+    font-size: 3.2rem;
 }
 h4{
-    font-family: 2.8rem;
+    font-size: 2.8rem;
 }
 img{
     max-width: 100%;
@@ -142,7 +143,7 @@ img{
 }
 
 .entrada{
-    border-bottom: .1rem solid var(--gris);
+    border-bottom: 1px solid var(--gris);
     margin-bottom: 2rem;
 }
 
@@ -154,7 +155,6 @@ img{
 
 .boton{
     display: block;
-    background-color: var(--negro);
     font-family: var(--fuenteHeading);
     color: var(--blanco);
     text-align: center;
@@ -169,7 +169,42 @@ img{
 
 @media (min-width: 769px) {
     .boton{
-        display: inline-block;
-        
+        display: inline-block; 
     }
+}
+
+.boton--primario{
+    background-color: var(--negro);
+}
+
+.boton--secundario{
+    background-color: var(--primario);
+}
+
+.cursos{
+    list-style: none;
+}
+
+.widget-curso{
+    border-bottom: 1px solid var(--gris);
+    margin-bottom: 2rem;
+}
+
+.widget-curso:last-of-type{
+    border-bottom: none;
+    margin-bottom: 0;
+}
+
+.widget-curso__label{
+    font-family: var(--fuenteHeading);
+    font-weight: bold;
+}
+
+.widget-curso__info{
+    font-weight: normal;
+}
+
+.widget-curso__label, 
+.widget-curso__info{
+    font-size: 2rem;
 }
