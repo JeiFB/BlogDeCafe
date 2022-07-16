@@ -79,8 +79,14 @@ img{
 
 /** header **/
 
-.header{
+.webp .header{
+    background-image: url(/img/banner.webp);
+}
+
+.no-webp .header{
     background-image: url(/img/banner.jpg);
+}
+.header{
     height: 60rem;
     background-size: cover;
     background-repeat: no-repeat;
@@ -138,11 +144,11 @@ img{
 /** blog **/
 
 @media (min-width: 768px) {
-   .contenido-principal{
-    display: grid;
-    grid-template-columns: 2fr 1fr;
-    column-gap: 4rem;
-   }
+    .contenido-principal{
+        display: grid;
+        grid-template-columns: 2fr 1fr;
+        column-gap: 4rem;
+    }
 }
 
 .entrada{
